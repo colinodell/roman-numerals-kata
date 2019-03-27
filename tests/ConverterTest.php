@@ -24,5 +24,6 @@ class ConverterTest extends TestCase
         yield [10, 'X'];
         yield [11, 'XI'];
         yield [20, 'XX'];
+        yield [23, 'XXIII'];
     }
 }
