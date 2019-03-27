@@ -4,18 +4,20 @@ namespace RomanKata;
 
 final class Converter
 {
+    private const DIGITS = [
+        10 => 'X',
+        1 => 'I',
+    ];
+
     public static function convert(int $number): string
     {
         $roman = '';
 
-        while ($number >= 10) {
-            $roman .= 'X';
-            $number -= 10;
-        }
-
-        while ($number >= 1) {
-            $roman .= 'I';
-            $number -= 1;
+        foreach (self::DIGITS as $arabicDigit => $romanDigit) {
+            while ($number >= $arabicDigit) {
+                $roman .= $romanDigit;
+                $number -= $arabicDigit;
+            }
         }
 
         return $roman;
