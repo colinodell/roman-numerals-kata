@@ -4,4 +4,8 @@ namespace RomanKata;
 
 final class Converter
 {
+    public static function convert(int $number): string
+    {
+        return 'I';
+    }
 }
