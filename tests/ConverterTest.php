@@ -7,8 +7,13 @@ use RomanKata\Converter;
 
 class ConverterTest extends TestCase
 {
-    public function testConverter()
+    public function testConverterWith1()
     {
         $this->assertEquals("I", Converter::convert(1));
+    }
+
+    public function testConverterWith2()
+    {
+        $this->assertEquals("II", Converter::convert(2));
     }
 }
