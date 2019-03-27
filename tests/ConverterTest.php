@@ -23,6 +23,7 @@ class ConverterTest extends TestCase
         yield [4, 'IV'];
         yield [5, 'V'];
         yield [8, 'VIII'];
+        yield [9, 'IX'];
 
         yield [10, 'X'];
         yield [11, 'XI'];
