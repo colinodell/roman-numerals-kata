@@ -21,6 +21,7 @@ class ConverterTest extends TestCase
         yield [2, 'II'];
         yield [3, 'III'];
         yield [5, 'V'];
+        yield [8, 'VIII'];
 
         yield [10, 'X'];
         yield [11, 'XI'];
