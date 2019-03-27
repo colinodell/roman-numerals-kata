@@ -6,10 +6,12 @@ final class Converter
 {
     public static function convert(int $number): string
     {
-        if ($number === 2) {
-            return 'II';
+        $roman = '';
+
+        while ($number-- > 0) {
+            $roman .= 'I';
         }
 
-        return 'I';
+        return $roman;
     }
 }
