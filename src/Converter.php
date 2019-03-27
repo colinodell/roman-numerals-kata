@@ -6,6 +6,7 @@ final class Converter
 {
     private const DIGITS = [
         10 => 'X',
+        5 => 'V',
         1 => 'I',
     ];
 
