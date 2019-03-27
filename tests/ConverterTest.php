@@ -32,5 +32,6 @@ class ConverterTest extends TestCase
         yield [55, 'LV'];
         yield [1505, 'MDV'];
         yield [1954, 'MCMLIV'];
+        yield [2499, 'MMCDXCIX'];
     }
 }
