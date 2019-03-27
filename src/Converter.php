@@ -13,8 +13,9 @@ final class Converter
             $number -= 10;
         }
 
-        while ($number-- > 0) {
+        while ($number >= 1) {
             $roman .= 'I';
+            $number -= 1;
         }
 
         return $roman;
