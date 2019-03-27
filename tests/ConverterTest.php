@@ -7,18 +7,18 @@ use RomanKata\Converter;
 
 class ConverterTest extends TestCase
 {
-    public function testConverterWith1()
+    /**
+     * @dataProvider dataProviderForTestConverter
+     */
+    public function testConverter(int $arabic, string $expectedRoman)
     {
-        $this->assertEquals("I", Converter::convert(1));
+        $this->assertEquals($expectedRoman, Converter::convert($arabic));
     }
 
-    public function testConverterWith2()
+    public function dataProviderForTestConverter()
     {
-        $this->assertEquals("II", Converter::convert(2));
-    }
-
-    public function testConverterWith3()
-    {
-        $this->assertEquals("III", Converter::convert(3));
+        yield [1, 'I'];
+        yield [2, 'II'];
+        yield [3, 'III'];
     }
 }
