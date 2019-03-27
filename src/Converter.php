@@ -8,8 +8,9 @@ final class Converter
     {
         $roman = '';
 
-        if ($number === 10) {
-            return 'X';
+        while ($number >= 10) {
+            $roman .= 'X';
+            $number -= 10;
         }
 
         while ($number-- > 0) {
